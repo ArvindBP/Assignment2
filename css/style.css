@@ -1,0 +1,301 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8;
+  color:#666;
+  background-color: #FBFEF9;
+}
+
+.Navigation
+{
+	position: fixed;
+	z-index: 1;
+	margin: 0px;
+	width: 100%;
+	background-color: #064789;
+	opacity: .40;
+	padding-left: 200px;
+	padding-top: 25px;
+	height: 10%;
+	font-weight: bold;
+	display: flex;
+}
+.Navigation a
+{
+	text-decoration: none;
+	display: inline-block;
+	font-family: "sans-serif";
+	font-size: 30px;
+	padding-right:100px;
+	color: black;
+	text-align: center;
+}
+.Navigation:hover
+{
+	opacity: 1;
+}
+.Navigation a:hover
+{
+	color: white;
+}
+.Heading
+{
+  background-image:url('../images/football1.jpg');
+  min-height:100%;
+}
+.Heading{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.Heading h1
+{
+  position:absolute;
+  top:50%;
+  width:97.8%;
+  text-align:center;
+  font-size:40px;
+  line-height: 2
+  letter-spacing:8px;
+  text-transform:uppercase;
+  background-color:#111;
+  color:#0E79B2;
+  padding:20px;
+}
+
+.Hero
+{
+	height: 95%;
+	display: flex;
+	margin: 5%;
+	font-size: 25px;
+	justify-content: center;
+}
+.information
+{
+	flex:1;
+	padding-left:30px;
+	box-sizing: border-box;
+	letter-spacing: 1.5px;
+}
+.image
+{
+	flex:1;
+}
+.image img
+{
+	margin-top: 25px;
+	max-width: 150%;
+	max-height: 150%;
+	/*width: 500px;
+	height: 500px;
+	*/
+}
+
+.wrap
+{
+	display: flex;
+	justify-content: space-between;
+	font-size: 30px;
+	line-height: 1.5;
+	
+}
+.columns
+{
+	box-sizing: border-box;
+	background-color: lightgrey;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	flex-basis: 33%;
+}
+
+.Journey
+{
+	font-size: 30px;
+	line-height: 1.5;
+	display: flex;	
+	justify-content: space-between;
+
+}
+.insidejourney
+{
+	
+	flex-basis:64.5%;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 0px;
+	margin-top :2px;
+	background-color: lightgrey;
+}
+.gamemodes
+{
+	flex-basis:33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+.row
+{
+	background-color: lightgrey;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	margin-left: 0;
+	flex-basis: 25%;
+}
+.list1,.list2,.columns a,.Journey a
+{
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 4;
+}
+.list1 li a,.list2 li a,.columns a,.Journey a
+{
+	border-style: solid;
+	border-color: blue;
+	border-width: 2px;
+	padding: 10px;
+	border-radius: 25px;
+}
+.list1 li a:hover,.list2 li a:hover,.columns a:hover,.Journey a:hover
+{
+	color: white;
+	background-color: blue;
+}
+.footer
+{
+	margin-top :2px;
+	background-color: lightgrey;
+	padding-top: 20px;
+}
+.footer a
+{
+	text-decoration: none;
+	display: inline-block;
+	font-family: "sans-serif";
+	padding-right:100px;
+	color: black;
+	text-align: center;
+	font-size: 15px;
+}
+.footer a:hover
+{
+	text-decoration: underline;
+}
+.footer #one1
+{
+	float: right;
+}
+
+.icons
+{
+	display: flex;
+	list-style: none;
+	justify-content:right;
+}
+.icons li
+{
+	flex:1;
+	text-align: center;
+}
+.icons li a
+{
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 80px;
+	height: 80px;
+	background:#fff;
+	line-height: 80px;
+	font-size: 35px;
+	margin: 0 10px;
+	overflow: hidden;
+	position: relative;
+	border:3px solid #fff;
+	border-radius: 50%;
+	z-index: 1;
+}
+.icons li a .fa
+{
+	position: relative;
+	color: #262626;
+	transition: .5s;
+}
+.icons li a:hover .fa
+{
+	color: #fff;
+	transform: rotateY(360deg);
+}
+.icons li a::before
+{
+	content: '';
+	position: absolute;
+	top:  100%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	transition: 2s ;
+	z-index:2;
+	background-color: #f00; 
+} 
+.icons li a:hover:before
+{
+	top:0;  
+}
+
+.icons li:nth-child(1) a:before
+{
+	background-color: #e4405f;
+}
+.icons li:nth-child(2) a:before
+{
+	background-color: #0077B5;
+}
+.icons li:nth-child(3) a:before
+{
+	background-color: #3b5999;
+}
+.icons li:nth-child(4) a:before
+{
+	background-color: #55acee;
+}
+.footer
+{
+	background-color: darkgrey;
+}
+
+/*
+.Navigation .dropdown
+{
+	text-decoration: none;
+	font-family: "sans-serif";
+	font-size: 30px;
+	padding-right:100px;
+	color: black;
+	text-align: center;
+	border-style: none;
+}
+.Navigation button:hover
+{
+	color: white;
+	cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+*/
